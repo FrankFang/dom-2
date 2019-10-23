@@ -69,7 +69,7 @@ window.jQuery = function(selectorOrArrayOrTemplate){
     children(){
       const array = []
       this.each((node)=>{
-        // 上课的时候这段代码抄错了
+        // 上课的时候这段代码是复制的，复制错了，现已改正
         array.push(...node.children)
         
       })
