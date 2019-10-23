@@ -69,9 +69,9 @@ window.jQuery = function(selectorOrArrayOrTemplate){
     children(){
       const array = []
       this.each((node)=>{
-        if(array.indexOf(node.parentNode) === -1){
-          array.push(...node.children)
-        }
+        // 上课的时候这段代码抄错了
+        array.push(...node.children)
+        
       })
       return jQuery(array)
     },
