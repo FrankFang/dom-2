@@ -26,9 +26,9 @@ window.jQuery = function(selectorOrArrayOrTemplate){
     },
     appendTo(node){
       if(node instanceof Element){
-        this.each(el => node.appendChild(el))
+        this.each(el => node.appendChild(el)) // 遍历 elements，对每个 el 进行 node.appendChild 操作
       }else if(node.jquery === true){
-        this.each(el => node.get(0).appendChild(el))
+        this.each(el => node.get(0).appendChild(el))  // 遍历 elements，对每个 el 进行 node.get(0).appendChild(el))  操作
       }
     },
     append(children){
